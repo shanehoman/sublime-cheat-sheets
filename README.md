@@ -52,6 +52,7 @@ At the moment all cheat sheets are under heavy development as I use this plugin.
 ```
 >\tHeader
 >\t\tSubtext
+Text
 Command or code\s\sText
 \tCommand or code # Comments anywhere
 ```
