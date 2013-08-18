@@ -65,4 +65,4 @@ Where \t means tab and \s means space
 ```
 
 ## Source
-This plugin is completely based off of Steve Hammond's Cheater plugin.
+This plugin is based off of Steve Hammond's [Cheater](https://github.com/shammond42/cheater) plugin.
