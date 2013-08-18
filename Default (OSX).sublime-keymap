@@ -6,6 +6,4 @@
 	{ "keys": ["super+shift+c", "s", "t"], "command": "cheat_sheet", "args": {"cheatsheet": "Sublime Text"} },
 	{ "keys": ["super+shift+c", "r", "x"], "command": "cheat_sheet", "args": {"cheatsheet": "Regular Expressions"} },
 	{ "keys": ["super+shift+c", "s", "h"], "command": "cheat_sheet", "args": {"cheatsheet": "Bash"} }
-
-	{ "keys": ["super+shift+c", "r", "y"], "command": "cheat_sheet_tester", "args": {"cheatsheet": "filename"} }
 ]
