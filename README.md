@@ -50,10 +50,12 @@ At the moment all cheat sheets are under heavy development as I use this plugin.
 * Highlighting follows this format:
 
 ```
-Header
-\t Text
-Command \s\s Text
+>\tHeader
+>\t\tSubtext
+Command or code\s\sText
+\tCommand or code # Comments anywhere
 ```
+Where \t means tab and \s means space
 
 * If there's a problem, you can try making a shortcut that runs the tester command. The tester command will print the file paths where it expected your filename to be to the console. The console can be opened with `Ctrl + \``.
 
