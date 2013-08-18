@@ -1,0 +1,26 @@
+>	Github Flavored Markdown Cheatsheet.
+>		GFM is a variant of markdown developed by Github.
+
+>	Plain Text
+
+>	Headings
+	Header 1
+	========
+
+	Header 2
+	--------
+
+	# H1
+	## H2
+	### H3
+	#### H4
+	##### H5
+	###### H6
+
+>	URLs
+[text](url)	Turn text into an URL.
+
+![alt text](URL "title")  Place an image inline.
+
+	![alt text][label]
+	[label]: URL "title"

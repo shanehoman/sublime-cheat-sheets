@@ -7,8 +7,8 @@ MY_PLUGIN_DIR = dirname(realpath(__file__))
 class CheatSheetCommand(sublime_plugin.WindowCommand):
   def run(self, **args):
     sheetName = args["cheatsheet"] + ".cheatsheet"
-    userSheet = join(sublime.packages_path(), "User/cheat_sheets", sheetName)
-    defaultSheet = join(MY_PLUGIN_DIR,"cheat_sheets", sheetName)
+    userSheet = join(sublime.packages_path(), "User/cheat-sheets", sheetName)
+    defaultSheet = join(MY_PLUGIN_DIR,"cheat-sheets", sheetName)
 
     if exists(userSheet):
       sheet = userSheet
@@ -24,12 +24,12 @@ class CheatSheetCommand(sublime_plugin.WindowCommand):
     set_view_props()
     self.dest_view = dest_view
 
-class CheatSheetTesterCommand(sublime_plugin.TextCommand):  
-  def run(self, edit, **args):  
+class CheatSheetTesterCommand(sublime_plugin.TextCommand):
+  def run(self, edit, **args):
     sheetName = args["cheatsheet"] + ".cheatsheet"
-    userSheet = join(sublime.packages_path(), "User/cheat_sheets", sheetName)
-    defaultSheet = join(MY_PLUGIN_DIR,"cheat_sheets", sheetName)
-    
+    userSheet = join(sublime.packages_path(), "User/cheat-sheets", sheetName)
+    defaultSheet = join(MY_PLUGIN_DIR,"cheat-sheets", sheetName)
+
     for value in userSheet, defaultSheet:
       if exists(value):
         print("File found:     %s" % value)

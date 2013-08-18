@@ -1,24 +1,24 @@
-# Cheater Sublime Text 2 Plugin
+# Sublime Text Cheat Sheets Plugin
 
-Cheater is a plugin for quickly accessing cheat sheets in the Sublime Text 2 editor. Typing the key sequence will open a cheat sheet in a new file tab. If the sheet is already open, it will simply pop to the front.
+Cheat-sheets is a plugin for quickly accessing cheat sheets in the Sublime Text editor. Typing the key sequence will open a cheat sheet in a new tab. If the sheet is already open, it will simply pop to the front.
 
 ## Available Cheat Sheets
 
-At the moment there is only one available sheet.
+At the moment all cheat sheets are under heavy development as I use this plugin. Feel free to submit your own. Be aware that edits to the defaults sheets will be erased by an update. If you want to edit a sheet, copy it from `$st3/Packages/CheatSheets` to `$st3/Packages/Users/cheat-sheets`.
 
+* Bash "cmd/ctrl + shift + c" + "s" + "h"
+* Git "cmd/ctrl + shift + c" + "g" + "i" + "t"
+* Github Flavored Markdown "cmd/ctrl + shift + c" + "g" + "f" + "m"
+* Go "cmd/ctrl + shift + c" + "g" + "o"
+* KDE "cmd/ctrl + shift + c" + "k" + "d" + "e"
 * Regular Expressions "cmd/ctrl + shift + c" + "r" + "x"
+* Sublime Text "cmd/ctrl + shift + c" + "s" + "t"
 
 ## How to add your own Cheat Sheets
 
-* In your `./Packages/User/` folder create a folder named `cheat_sheet` and add your filename.cheatsheet. Highlighting follows the following format:
+* Add your cheat sheets to `$st3/Packages/User/cheat-sheets/filename.cheatsheet`.
 
-```
-Header
-\t Text
-Command \s\s Text
-```
-
-* Add a keyboard shortcut by adding the following line to `./Packages/User/Default(OS).sublime-keymap` and change the keys and filename:
+* Add a keyboard shortcut by adding the following line to `./Packages/User/Default (OS).sublime-keymap` and change the keys and filename:
 
 ```
 { "keys": ["ctrl+shift+c", "n", "s"], "command": "cheat_sheet", "args": {"cheatsheet": "filename"} }
@@ -47,16 +47,16 @@ Command \s\s Text
 ]
 ```
 
-## Note on Patches/Pull Requests
+* Highlighting follows this format:
 
-New sheets, and improvements to the existing ones are more than welcome.
+```
+Header
+\t Text
+Command \s\s Text
+```
 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a future version unintentionally.
-* Commit, but do not mess with the Rakefile. If you want to have your own version, that is fine but bump the version in a commit by itself in another branch so I can ignore it when I pull.
-* Send me a pull request. Bonus points for git flow feature branches.
+* If there's a problem, you can try making a shortcut that runs the tester command. The tester command will print the file paths where it expected your filename to be to the console. The console can be opened with `Ctrl + \``.
 
-## License
-
-Minitest-reporters is licensed under the MIT License. See LICENSE for details.
+```
+{ "keys": ["ctrl+shift+c", "r", "y"], "command": "cheat_sheet_tester", "args": {"cheatsheet": "filename"} }
+```
