@@ -28,24 +28,15 @@ At the moment all cheat sheets are under heavy development as I use this plugin.
 
 ```
 [
-  {
-    "id": "tools",
-    "children": [
-      {
-        "id": "cheat-sheets",
-        "caption": "Cheat Sheets",
-        "children": [
-          {
-            "caption": "filename",
-            "command": "cheat_sheet",
-            "args": {"cheatsheet": "filename"}
-          }
-        ]
-      }
-    ]
-  }
+  { "id": "tools", "children": [
+    { "id": "cheat-sheets", "caption": "Cheat Sheets", "children": [
+      { "caption": "Regular Expressions", "command": "cheat_sheet", "args": {"cheatsheet": "Regular Expressions"} }
+    ]}
+  ]}
 ]
+
 ```
+Add multiple entries just by copying and pasting the caption line.
 
 * Highlighting follows this format:
 
