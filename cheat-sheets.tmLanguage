@@ -10,56 +10,56 @@
 	<string>Cheat Sheet</string>
 	<key>patterns</key>
 	<array>
-		<!-- White >\s\s\s\t-->
+		<!-- Subtext: White >\t\t.*-->
 		<dict>
 			<key>match</key>
 			<string>^>\t\t.*</string>
 			<key>name</key>
 			<string>variable.headig</string>
 		</dict>
-		<!-- Orange >\s\s\s -->
+		<!-- Header: Orange >\t -->
 		<dict>
 			<key>match</key>
 			<string>^>\t.*</string>
 			<key>name</key>
 			<string>variable.parameter</string>
 		</dict>
-		<!-- Grey #.* -->
+		<!-- Comment: Grey #.* -->
 		<dict>
 			<key>match</key>
 			<string>[#].*</string>
 			<key>name</key>
 			<string>comment</string>
 		</dict>
-		<!-- Green ^\t.*#-->
+		<!-- Keycode: Green ^\t.*#-->
 		<dict>
 			<key>match</key>
 			<string>^\t.*(?=#)</string>
 			<key>name</key>
 			<string>entity.name.function</string>
 		</dict>
-		<!-- Green ^\t.*#-->
+		<!-- Keycode: Green ^\t.*#-->
 		<dict>
 			<key>match</key>
 			<string>^\t.*(?=\n)</string>
 			<key>name</key>
 			<string>entity.name.function</string>
 		</dict>
-		<!-- Green \n.*\s\s -->
+		<!-- Keycode: Green ^.*\s\s -->
 		<dict>
 			<key>match</key>
 			<string>^.*\s\s</string>
 			<key>name</key>
 			<string>entity.name.function</string>
 		</dict>
-		<!-- Green \n.*\s\s -->
+		<!-- Keycode: Green ^.*\s\s -->
 		<dict>
 			<key>match</key>
 			<string>^\S.*\t</string>
 			<key>name</key>
 			<string>entity.name.function</string>
 		</dict>
-		<!-- White anything after \s\s -->
+		<!-- Text: White \s\s.* -->
 		<dict>
 			<key>match</key>
 			<string>[#].*</string>
