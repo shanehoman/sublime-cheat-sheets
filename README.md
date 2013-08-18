@@ -63,3 +63,6 @@ Where \t means tab and \s means space
 ```
 { "keys": ["ctrl+shift+c", "r", "y"], "command": "cheat_sheet_tester", "args": {"cheatsheet": "filename"} }
 ```
+
+## Source
+This plugin is completely based off of Steve Hammond's Cheater plugin.
