@@ -1,12 +1,12 @@
 # Sublime Text Cheat Sheets Plugin
 
-Cheat-sheets is a plugin for quickly accessing cheat sheets in the Sublime Text editor. Typing the key sequence will open a cheat sheet in a new tab. If the sheet is already open, it will simply pop to the front.
+Cheat-sheets is a plugin for quickly accessing cheat sheets in the Sublime Text editor. Typing the key sequence will open a cheat sheet in a new tab. If the sheet is already open, it will simply activate the tab.
 
 ![Regular Expressions Cheatsheet](https://raw.github.com/dmikalova/sublime-cheat-sheets/master/example.png "Regular Expressions Cheatsheet")
 
 ## Available Cheat Sheets
 
-At the moment all cheat sheets are under heavy development as I use this plugin. Feel free to submit your own. Be aware that edits to the defaults sheets will be erased by an update. If you want to edit a sheet, copy it from `$st3/Packages/CheatSheets` to `$st3/Packages/Users/cheat-sheets`.
+At the moment all cheat sheets are under heavy development as I use this plugin. Feel free to submit your own. Be aware that edits to the defaults sheets will be erased by an update. If you want to edit a sheet, copy it from `$st3/Packages/Cheat Sheets/cheat-sheets` to `$st3/Packages/Users/cheat-sheets`.
 
 * Bash "cmd/ctrl + shift + c" + "s" + "h"
 * Git "cmd/ctrl + shift + c" + "g" + "i" + "t"
@@ -26,7 +26,7 @@ At the moment all cheat sheets are under heavy development as I use this plugin.
 { "keys": ["ctrl+shift+c", "n", "s"], "command": "cheat_sheet", "args": {"cheatsheet": "filename"} }
 ```
 
-* Add a menu entry by adding the following to `./Packages/User/Main.sublime-menu and change both instances of filename:
+* Add a menu entry by adding the following to `./Packages/User/Main.sublime-menu` and change both instances of filename:
 
 ```
 [
@@ -38,7 +38,7 @@ At the moment all cheat sheets are under heavy development as I use this plugin.
 ]
 
 ```
-Add multiple entries just by copying and pasting the caption line.
+To add multiple entries just copy and paste the caption line and add a comma in between each entry.
 
 * Highlighting follows this format:
 
@@ -51,7 +51,7 @@ Command or code\s\sText
 ```
 Where \t means tab and \s means space
 
-* If there's a problem, you can try making a shortcut that runs the tester command. The tester command will print the file paths where it expected your filename to be to the console. The console can be opened with `Ctrl + \``.
+* If there's a problem, you can try making a shortcut that runs the tester command. The tester command will print the file paths where it expected your filename to be to the console. The console can be opened with ``Ctrl + \```.
 
 ```
 { "keys": ["ctrl+shift+c", "r", "y"], "command": "cheat_sheet_tester", "args": {"cheatsheet": "filename"} }
