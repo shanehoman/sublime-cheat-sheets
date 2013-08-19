@@ -2,6 +2,8 @@
 
 Cheat-sheets is a plugin for quickly accessing cheat sheets in the Sublime Text editor. Typing the key sequence will open a cheat sheet in a new tab. If the sheet is already open, it will simply pop to the front.
 
+![Regular Expressions Cheatsheet](/example.png "Regular Expressions Cheatsheet")
+
 ## Available Cheat Sheets
 
 At the moment all cheat sheets are under heavy development as I use this plugin. Feel free to submit your own. Be aware that edits to the defaults sheets will be erased by an update. If you want to edit a sheet, copy it from `$st3/Packages/CheatSheets` to `$st3/Packages/Users/cheat-sheets`.
