@@ -6,15 +6,15 @@ Cheat-sheets is a plugin for quickly accessing cheat sheets in the Sublime Text 
 
 ## Available Cheat Sheets
 
-At the moment all cheat sheets are under heavy development as I use this plugin. Feel free to submit your own. Be aware that edits to the defaults sheets will be erased by an update. If you want to edit a sheet, copy it from `$st3/Packages/Cheat Sheets/cheat-sheets` to `$st3/Packages/Users/cheat-sheets`.
+At the moment all cheat sheets are under heavy development as I use this plugin. Feel free to submit your own. Be aware that edits to the defaults sheets will be erased by an update. If you want to edit a sheet, copy it from `$st3/Packages/Cheat Sheets/cheat-sheets` to `$st3/Packages/User/cheat-sheets`.
 
-* Bash "cmd/ctrl + shift + c" + "s" + "h"
-* Git "cmd/ctrl + shift + c" + "g" + "i" + "t"
-* Github Flavored Markdown "cmd/ctrl + shift + c" + "g" + "f" + "m"
-* Go "cmd/ctrl + shift + c" + "g" + "o"
-* KDE "cmd/ctrl + shift + c" + "k" + "d" + "e"
-* Regular Expressions "cmd/ctrl + shift + c" + "r" + "x"
-* Sublime Text "cmd/ctrl + shift + c" + "s" + "t"
+Bash | "ctrl + shift + c" + "s" + "h"
+Git | "ctrl + shift + c" + "g" + "i" + "t"
+Github Flavored Markdown | "ctrl + shift + c" + "g" + "f" + "m"
+Go | "ctrl + shift + c" + "g" + "o"
+KDE | "ctrl + shift + c" + "k" + "d" + "e"
+Regular Expressions | "ctrl + shift + c" + "r" + "x"
+Sublime Text | "ctrl + shift + c" + "s" + "t"
 
 ## How to add your own Cheat Sheets
 
