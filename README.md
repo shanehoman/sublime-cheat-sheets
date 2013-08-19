@@ -32,7 +32,6 @@ Sublime Text             | Ctrl + Shft + C,  S, T
 	```
 
 3. Add a menu entry by adding the following to `./Packages/User/Main.sublime-menu` and change both instances of $filename:
-
 	```
 	[
 		{ "id": "tools", "children": [
