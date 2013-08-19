@@ -6,7 +6,7 @@ Cheat Sheets is a plugin for quickly accessing cheat sheets in the Sublime Text 
 
 ## Available Cheat Sheets
 
-At the moment all cheat sheets are under heavy development as I use this plugin. Feel free to submit your own sheets or edits. Be aware that edits to the defaults sheets will be erased by an update. If you want to safely edit a sheet, copy it from `$st3/Packages/Cheat Sheets/cheat-sheets` to `$st3/Packages/User/cheat-sheets`. If both folders have sheets with the same $filename then the one in `$st3/User/cheat-sheets` will be opened.
+At the moment all cheat sheets are under heavy development as I use this plugin. Feel free to submit your own sheets or edits. Be aware that edits to the defaults sheets will be erased by an update. If you want to safely edit a sheet, copy it from `$ST/Packages/Cheat Sheets/cheat-sheets` to `$ST/Packages/User/cheat-sheets`. If both folders have sheets with the same $filename then the one in `$ST/User/cheat-sheets` will be opened.
 
 Cheat Sheets can be opened either from the menu: `Tools > Cheat Sheets`, the command palette by pressing `Ctrl + Shft + P` and typing Cheat Sheet, or from the following keyboard shortcuts:
 
@@ -22,16 +22,16 @@ Sublime Text             | Ctrl + Shft + C,  S, T
 
 ## How to add your own Cheat Sheets
 
-1. Add your cheat sheet to `$st3/Packages/User/cheat-sheets/$filename.cheatsheet`.
+1. Add your cheat sheet to `$ST/Packages/User/cheat-sheets/$filename.cheatsheet`.
 
-2. Add a keyboard shortcut by adding the following line to `./Packages/User/Default (OS).sublime-keymap` and change the keys and $filename:
+2. Add a keyboard shortcut by adding the following line to `$ST/Packages/User/Default (OS).sublime-keymap` and change the keys and $filename:
 	```
 	[
 		{ "keys": ["ctrl+shift+c", "n", "s"], "command": "cheat_sheet", "args": {"cheatsheet": "$filename"} }
 	]
 	```
 
-3. Add a menu entry by adding the following to `./Packages/User/Main.sublime-menu` and change both instances of $filename:
+3. Add a menu entry by adding the following to `$ST/Packages/User/Main.sublime-menu` and change both instances of $filename:
 	```
 	[
 		{ "id": "tools", "children": [
@@ -42,7 +42,7 @@ Sublime Text             | Ctrl + Shft + C,  S, T
 	]
 	```
 
-4. Add a palette item to `./Packages/User/Default.sublime-commands` and change both instances of $filename.
+4. Add a palette item to `$ST/Packages/User/Default.sublime-commands` and change both instances of $filename.
 	```
 	[
 		{ "caption": "Cheat Sheet: $filename", "command": "cheat_sheet", "args": {"cheatsheet": "$filename"} }

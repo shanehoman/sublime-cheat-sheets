@@ -1,40 +1,52 @@
->	Regular Expressions Cheatsheet
->		A cheat sheet for using Regular Expressions.
+>	Regular Expressions Cheat Sheet
+>		A regular expression specifies a set of strings that matches it. This cheat sheet is based off the Python 3's Regular Expressions (http://docs.python.org/3/library/re.html). For an introductory tutorial, check out http://docs.python.org/3/howto/regex.html .
+
+>	Special Characters
+.		Matches any single character except a newline.
+^		Matches the start of the string.
+$		Matches the end of the string.
+*		Greedily matches 0 or more repetitions of the preceding Regular Expression.
+*?		Matches 0 or more repetitions of the preceding Regular Expression.
++		Greedily matches 1 or more repetitions of the preceding Regular Expression.
++?		Matches 1 or more repetitions of the preceding Regular Expression.
+?		Greedily matches 0 or 1 repetitions of the preceding Regular Expression.
+??		Matches 0 or 1 repetitions of the preceding Regular Expression.
+{m}		Matches exactly m repetitions of the previous Regular Expression.
+{m,n}	Greedily matches from m to n many repetitions of the previous Regular Expression.
+{m,n}?	Matches from m to n many repetitions of the previous Regular Expression.
+
+a		Any character, except those described below, matches itself, once.
+\		Escape for the characters below. Maches one instance of the characterh that follows the \
+\x00	Where 00 are 2 hexadecimal digits. Matches the character with the ANSI/ASCII value specified by the hexadecimnal digits.
+\n		Line feed character
+\r		Carriage return character
+\t		Tab character
+\cA		Where A is A-Z, matches Control+A through Control+Z
 
 >	Anchors
-^      Start of current line
-$      End of current line, except for a trailing line break
-\A     Start of current string
-\Z     End of current string, except for a trailing line break
-\z     Absolute end of the current string
-
->	Characters
-a      Any character, except those described below, matches itself, once.
-\      Escape for the characters below. Maches one instance of the characterh that follows the \
-\x00   Where 00 are 2 hexadecimal digits. Matches the character with the ANSI/ASCII value specified by the hexadecimnal digits.
-\n     Line feed character
-\r     Carriage return character
-\t     Tab character
-\cA    Where A is A-Z, matches Control+A through Control+Z
-.      Any single character
+^		Start of current line
+$		End of current line, except for a trailing line break
+\A		Start of current string
+\Z		End of current string, except for a trailing line break
+\z		Absolute end of the current string
 
 >	Quantifiers
-?      Makes the preceding term is optional
-*      Matches the previous item 0 or more times, so it always matches something
-*?     Lazy version of the aboves, matches as few characters as possible
-+      Matches the previous item 1 or more times
-+?     Lazy version of the above, matches as few characters as possible
-{n}    Matches the previous item exactly n times.
-{n,m}  Matches the previous item between n and m times. A ? makes it lazy.
-{n,}   Matches the previous item n or more times. A ? makes it lazy.
+?		Makes the preceding term is optional
+*		Matches the previous item 0 or more times, so it always matches something
+*?		Lazy version of the aboves, matches as few characters as possible
++		Matches the previous item 1 or more times
++?		Lazy version of the above, matches as few characters as possible
+{n}		Matches the previous item exactly n times.
+{n,m}	Matches the previous item between n and m times. A ? makes it lazy.
+{n,}	Matches the previous item n or more times. A ? makes it lazy.
 
 >	Character Sets
-[abc]  Matches a single instance of a or b or c
-[a-e]  Matches a single instance of a character between a and c
-^[ab]  Matches a single instance of any character except a and b
-\d     Any single digit character
-\w     Any single word chracter, leters, digits and underscores
-\s     Any single whitespace character
-\D     Any single character thas is not a digit
-\W     Any single character that not a word character
-\S     Any single character that is not whitespace
+[abc]	Matches a single instance of a or b or c
+[a-e]	Matches a single instance of a character between a and c
+^[ab]	Matches a single instance of any character except a and b
+\d		Any single digit character
+\w		Any single word chracter, leters, digits and underscores
+\s		Any single whitespace character
+\D		Any single character thas is not a digit
+\W		Any single character that not a word character
+\S		Any single character that is not whitespace
