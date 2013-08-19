@@ -1,5 +1,5 @@
 >	Regular Expressions Cheatsheet
->		A cheatsheet for using Regular Expressions.
+>		A cheat sheet for using Regular Expressions.
 
 >	Anchors
 ^      Start of current line
@@ -38,4 +38,3 @@ a      Any character, except those described below, matches itself, once.
 \D     Any single character thas is not a digit
 \W     Any single character that not a word character
 \S     Any single character that is not whitespace
-
