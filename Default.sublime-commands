@@ -1,0 +1,30 @@
+[
+	{
+		"caption": "CheatSheet: Github Flavored Markdown",
+		"command": "cheat_sheet", "args": {"cheatsheet": "Github Flavored Markdown"}
+	},
+	{
+		"caption": "CheatSheet: Git",
+		"command": "cheat_sheet", "args": {"cheatsheet": "Git"}
+	},
+	{
+		"caption": "CheatSheet: Go",
+		"command": "cheat_sheet", "args": {"cheatsheet": "Go"}
+	},
+	{
+		"caption": "CheatSheet: KDE",
+		"command": "cheat_sheet", "args": {"cheatsheet": "KDE"}
+	},
+	{
+		"caption": "CheatSheet: Sublime Text",
+		"command": "cheat_sheet", "args": {"cheatsheet": "Sublime Text"}
+	},
+	{
+		"caption": "CheatSheet: Regular Expressions",
+		"command": "cheat_sheet", "args": {"cheatsheet": "Regular Expressions"}
+	},
+	{
+		"caption": "CheatSheet: Bash",
+		"command": "cheat_sheet", "args": {"cheatsheet": "Bash"}
+	}
+]
