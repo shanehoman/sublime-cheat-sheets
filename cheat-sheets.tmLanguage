@@ -59,15 +59,6 @@
 			<key>name</key>
 			<string>entity.name.function</string>
 		</dict>
-		<!-- Text: White \s\s.* -->
-		<dict>
-			<key>match</key>
-			<string>[#].*</string>
-			<key>name</key>
-			<string>comment</string>
-		</dict>
-
-
 	</array>
 	<key>scopeName</key>
 	<string>source.cheat-sheet</string>

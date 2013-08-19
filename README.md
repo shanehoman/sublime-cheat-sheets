@@ -1,61 +1,78 @@
 # Sublime Text Cheat Sheets Plugin
 
-Cheat-sheets is a plugin for quickly accessing cheat sheets in the Sublime Text editor. Typing the key sequence will open a cheat sheet in a new tab. If the sheet is already open, it will simply activate the tab.
+Cheat-sheets is a plugin for quickly accessing cheat sheets in the Sublime Text editor. Typing the key sequence will open a cheat sheet in a new tab. If the sheet is already open, it will activate that tab.
 
 ![Regular Expressions Cheatsheet](https://raw.github.com/dmikalova/sublime-cheat-sheets/master/example.png "Regular Expressions Cheatsheet")
 
 ## Available Cheat Sheets
 
-At the moment all cheat sheets are under heavy development as I use this plugin. Feel free to submit your own. Be aware that edits to the defaults sheets will be erased by an update. If you want to edit a sheet, copy it from `$st3/Packages/Cheat Sheets/cheat-sheets` to `$st3/Packages/User/cheat-sheets`.
+At the moment all cheat sheets are under heavy development as I use this plugin. Feel free to submit your own sheets or edits. Be aware that edits to the defaults sheets will be erased by an update. If you want to safely edit a sheet, copy it from `$st3/Packages/Cheat Sheets/cheat-sheets` to `$st3/Packages/User/cheat-sheets`. If both folders have sheets with the same $filename then the one in `$st3/User/cheat-sheets` will be opened.
 
-Bash | "ctrl + shift + c" + "s" + "h"
-Git | "ctrl + shift + c" + "g" + "i" + "t"
-Github Flavored Markdown | "ctrl + shift + c" + "g" + "f" + "m"
-Go | "ctrl + shift + c" + "g" + "o"
-KDE | "ctrl + shift + c" + "k" + "d" + "e"
-Regular Expressions | "ctrl + shift + c" + "r" + "x"
-Sublime Text | "ctrl + shift + c" + "s" + "t"
+Cheat Sheets can be opened either from the menu: `Tools > Cheat Sheets`, the command palette by pressing `Ctrl + Shft + P` and typing Cheat Sheet, or from the following keyboard shortcuts:
+
+Command                  | Keyboard Shortcut
+------------------------ | ---
+Bash                     | Ctrl + Shft + C,  S, H
+Git                      | Ctrl + Shft + C,  G, I, T
+Github Flavored Markdown | Ctrl + Shft + C,  G, F, M
+Go                       | Ctrl + Shft + C,  G, O
+KDE                      | Ctrl + Shft + C,  K, D, E
+Regular Expressions      | Ctrl + Shft + C,  R, X
+Sublime Text             | Ctrl + Shft + C,  S, T
 
 ## How to add your own Cheat Sheets
 
-* Add your cheat sheets to `$st3/Packages/User/cheat-sheets/filename.cheatsheet`.
+1. Add your cheat sheet to `$st3/Packages/User/cheat-sheets/$filename.cheatsheet`.
 
-* Add a keyboard shortcut by adding the following line to `./Packages/User/Default (OS).sublime-keymap` and change the keys and filename:
+2. Add a keyboard shortcut by adding the following line to `./Packages/User/Default (OS).sublime-keymap` and change the keys and $filename:
+	```
+	[
+		{ "keys": ["ctrl+shift+c", "n", "s"], "command": "cheat_sheet", "args": {"cheatsheet": "$filename"} }
+	]
+	```
 
-```
-{ "keys": ["ctrl+shift+c", "n", "s"], "command": "cheat_sheet", "args": {"cheatsheet": "filename"} }
-```
+3. Add a menu entry by adding the following to `./Packages/User/Main.sublime-menu` and change both instances of $filename:
+	```
+	[
+		{ "id": "tools", "children": [
+			{ "id": "cheat-sheets", "caption": "Cheat Sheets", "children": [
+				{ "caption": "$filename", "command": "cheat_sheet", "args": {"cheatsheet": "$filename"} }
+			]}
+		]}
+	]
+	```
 
-* Add a menu entry by adding the following to `./Packages/User/Main.sublime-menu` and change both instances of filename:
+4. Add a palette item to `./Packages/User/Default.sublime-commands` and change both instances of $filename.
+	```
+	[
+		{ "caption": "Cheat Sheet: $filename", "command": "cheat_sheet", "args": {"cheatsheet": "$filename"} }
+	]
+	```
 
-```
-[
-  { "id": "tools", "children": [
-    { "id": "cheat-sheets", "caption": "Cheat Sheets", "children": [
-      { "caption": "Regular Expressions", "command": "cheat_sheet", "args": {"cheatsheet": "Regular Expressions"} }
-    ]}
-  ]}
-]
+	To add multiple cheat-sheets copy and paste just the keys or caption line and add a comma in between each entry to all the above files.
 
-```
-To add multiple entries just copy and paste the caption line and add a comma in between each entry.
+5. Highlighting follows this format:
+	```
+	>\tHeader
+	>\t\tSubtext
+	Text
+	Command or code\s\sText
+	\tCommand or code # Comments anywhere
+	```
 
-* Highlighting follows this format:
+	Where \t means tab and \s means space.
 
-```
->\tHeader
->\t\tSubtext
-Text
-Command or code\s\sText
-\tCommand or code # Comments anywhere
-```
-Where \t means tab and \s means space
+* If there's a problem, you can use the cheat_sheet_tester command. The tester command will print in the console the file paths where it expected to find your $filename. The console can be opened with `` Ctrl + ` `` or `View > Show Console`.
 
-* If there's a problem, you can try making a shortcut that runs the tester command. The tester command will print the file paths where it expected your filename to be to the console. The console can be opened with `` Ctrl + ` ``.
+	The tester command can be run directly in the console with:
+	```
+	view.run_command("cheat_sheet_tester", {"cheatsheet": "$filename"})
+	```
 
-```
-{ "keys": ["ctrl+shift+c", "r", "y"], "command": "cheat_sheet_tester", "args": {"cheatsheet": "filename"} }
-```
+	The tester command can also be run as a keyboard shortcut with:
+	```
+	{ "keys": ["ctrl+shift+c", "r", "y"], "command": "cheat_sheet_tester", "args": {"cheatsheet": "$filename"} }
+	```
 
-## Source
+## Credits
 This plugin is based off of Steve Hammond's [Cheater](https://github.com/shammond42/cheater) plugin.
