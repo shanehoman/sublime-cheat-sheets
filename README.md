@@ -51,7 +51,7 @@ Command or code\s\sText
 ```
 Where \t means tab and \s means space
 
-* If there's a problem, you can try making a shortcut that runs the tester command. The tester command will print the file paths where it expected your filename to be to the console. The console can be opened with `` Ctrl + \` ``.
+* If there's a problem, you can try making a shortcut that runs the tester command. The tester command will print the file paths where it expected your filename to be to the console. The console can be opened with `` Ctrl + ` ``.
 
 ```
 { "keys": ["ctrl+shift+c", "r", "y"], "command": "cheat_sheet_tester", "args": {"cheatsheet": "filename"} }
