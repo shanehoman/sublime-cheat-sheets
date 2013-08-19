@@ -75,7 +75,7 @@ Sublime Text             | Ctrl + Shft + C,  S, T
 	```
 
 ## External Programs
-If you want to have access to your cheat sheets outside of sublime text you can use [KLook](http://www.koryavov.net/2012/03/klook-new-utility-for-kde-and-rosa.html) on KDE, [Gloobus](http://gloobus.net/gloobus-preview/) on Gnome, or [Quick Look](http://www.macworld.com/article/1131923/qlterminal.html) on OSX. However none of the these have syntax highlighting, and there's always the subl command to quickly open a file Sublime Text.
+If you want to have access to your cheat sheets outside of sublime text you can use [KLook](http://www.koryavov.net/2012/03/klook-new-utility-for-kde-and-rosa.html) on KDE, [Gloobus](http://gloobus.net/gloobus-preview/) on Gnome, [Quick Look](http://www.macworld.com/article/1131923/qlterminal.html) on OSX, or [maComfort](http://rafaelklaus.com/macomfort/) on Windows. However none of the these have syntax highlighting, and there's always the subl command to quickly open a file Sublime Text.
 
 ## Credits
 This plugin is based off of Steve Hammond's [Cheater](https://github.com/shammond42/cheater) plugin.
