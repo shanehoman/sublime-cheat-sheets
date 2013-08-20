@@ -5,7 +5,7 @@ Cheat Sheets is a plugin for quickly accessing cheat sheets in the Sublime Text 
 
 ## Installation
 ### Package Control
-The [Cheat Sheets package](https://sublime.wbond.net/packages/Cheat%20Sheets) is available in [Package Control](https://sublime.wbond.net/installation). Once Package Control is installed, install Cheat Sheets by opening the command palette `Ctrl + Shft + P`, type **"Install"**, and select **"Package Control: Install Package"**, then type and select **"Cheat Sheets"**.
+The [Cheat Sheets package](https://sublime.wbond.net/packages/Cheat%20Sheets) is available in [Package Control](https://sublime.wbond.net/installation). Once Package Control is installed, install Cheat Sheets by opening the command palette `Ctrl + Shft + P`, type **Install**, and select **Package Control: Install Package**, then type and select **Cheat Sheets**.
 
 ### Clone from Github
 ```
