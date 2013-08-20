@@ -25,54 +25,60 @@ Sublime Text             | Ctrl + Shft + C,  S, T
 1. Add your cheat sheet to `$ST/Packages/User/cheat-sheets/$filename.cheatsheet`.
 
 2. Add a keyboard shortcut by adding the following line to `$ST/Packages/User/Default (OS).sublime-keymap` and change the keys and $filename:
-	```
-	[
-		{ "keys": ["ctrl+shift+c", "n", "s"], "command": "cheat_sheet", "args": {"cheatsheet": "$filename"} }
-	]
-	```
+
+```json
+[
+	{ "keys": ["ctrl+shift+c", "n", "s"], "command": "cheat_sheet", "args": {"cheatsheet": "$filename"} }
+]
+```
 
 3. Add a menu entry by adding the following to `$ST/Packages/User/Main.sublime-menu` and change both instances of $filename:
-	```
-	[
-		{ "id": "tools", "children": [
-			{ "id": "cheat-sheets", "caption": "Cheat Sheets", "children": [
-				{ "caption": "$filename", "command": "cheat_sheet", "args": {"cheatsheet": "$filename"} }
-			]}
+
+```json
+[
+	{ "id": "tools", "children": [
+		{ "id": "cheat-sheets", "caption": "Cheat Sheets", "children": [
+			{ "caption": "$filename", "command": "cheat_sheet", "args": {"cheatsheet": "$filename"} }
 		]}
-	]
-	```
+	]}
+]
+```
 
 4. Add a palette item to `$ST/Packages/User/Default.sublime-commands` and change both instances of $filename.
-	```
-	[
-		{ "caption": "Cheat Sheet: $filename", "command": "cheat_sheet", "args": {"cheatsheet": "$filename"} }
-	]
-	```
 
-	To add multiple cheat sheets copy and paste just the keys or caption line and add a comma in between each entry to all the above files.
+```json
+[
+	{ "caption": "Cheat Sheet: $filename", "command": "cheat_sheet", "args": {"cheatsheet": "$filename"} }
+]
+```
+
+To add multiple cheat sheets copy and paste just the keys or caption line and add a comma in between each entry to all the above files.
 
 5. Highlighting follows this format:
-	```
-	>\tHeader
-	>\t\tSubtext
-	Text
-	Command or code\s\sText
-	\tCommand or code # Comments anywhere
-	```
 
-	Where \t means tab and \s means space.
+```
+>\tHeader
+>\t\tSubtext
+Text
+Command or code\s\sText
+\tCommand or code # Comments anywhere
+```
+
+Where \t means tab and \s means space.
 
 * If there's a problem, you can use the cheat_sheet_tester command. The tester command will print in the console the file paths where it expected to find your $filename. The console can be opened with `` Ctrl + ` `` or `View > Show Console`.
 
-	The tester command can be run directly in the console with:
-	```
-	view.run_command("cheat_sheet_tester", {"cheatsheet": "$filename"})
-	```
+The tester command can be run directly in the console with:
 
-	The tester command can also be run as a keyboard shortcut with:
-	```
-	{ "keys": ["ctrl+shift+c", "r", "y"], "command": "cheat_sheet_tester", "args": {"cheatsheet": "$filename"} }
-	```
+```python
+view.run_command("cheat_sheet_tester", {"cheatsheet": "$filename"})
+```
+
+The tester command can also be run as a keyboard shortcut with:
+
+```json
+{ "keys": ["ctrl+shift+c", "r", "y"], "command": "cheat_sheet_tester", "args": {"cheatsheet": "$filename"} }
+```
 
 ## External Programs
 If you want to have access to your cheat sheets outside of Sublime Text you can use [KLook](http://www.koryavov.net/2012/03/klook-new-utility-for-kde-and-rosa.html) on KDE, [Gloobus](http://gloobus.net/gloobus-preview/) on Gnome, [Quick Look](http://www.macworld.com/article/1131923/qlterminal.html) on OSX, or [maComfort](http://rafaelklaus.com/macomfort/) on Windows. However none of the these have syntax highlighting, and there's always the `subl` command to quickly open a file in Sublime Text.
