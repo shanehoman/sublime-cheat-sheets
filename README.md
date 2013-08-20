@@ -21,8 +21,6 @@ Regular Expressions      | Ctrl + Shft + C,  R, X
 Sublime Text             | Ctrl + Shft + C,  S, T
 
 ## How to add your own Cheat Sheets
-This section currently doesn't render correctly in [Package Control](https://sublime.wbond.net/packages/Cheat%20Sheets), please check out the [Github page](https://github.com/dmikalova/sublime-cheat-sheets) until wbond fixes the markdown interpreter.
-
 1. Add your cheat sheet to `$ST/Packages/User/cheat-sheets/$filename.cheatsheet`.
 
 2. Add a keyboard shortcut by adding the following line to `$ST/Packages/User/Default (OS).sublime-keymap` and change the keys and $filename:
