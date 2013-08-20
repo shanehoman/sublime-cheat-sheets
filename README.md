@@ -1,11 +1,18 @@
 # Sublime Text Cheat Sheets Plugin
-
 Cheat Sheets is a plugin for quickly accessing cheat sheets in the Sublime Text editor. Typing the key sequence will open a cheat sheet in a new tab. If the cheat sheet is already open, it will activate that tab.
 
 ![Regular Expressions Cheatsheet](https://raw.github.com/dmikalova/sublime-cheat-sheets/master/example.png "Regular Expressions Cheatsheet")
 
-## Available Cheat Sheets
+## Installation
+### Package Control
+The [Cheat Sheets package](https://sublime.wbond.net/packages/Cheat%20Sheets) is available in [Package Control](https://sublime.wbond.net/installation). Once Package Control is installed, install Cheat Sheets by opening the command palette `Ctrl + Shft + P`, type **"Install"**, and select **"Package Control: Install Package"**, then type and select **"Cheat Sheets"**.
 
+### Clone from Github
+```
+git clone https://github.com/dmikalova/sublime-cheat-sheets.git
+```
+
+## Available Cheat Sheets
 At the moment all cheat sheets are under heavy development as I use this plugin. Feel free to submit your own sheets or edits. Be aware that edits to the defaults sheets will be erased by an update. If you want to safely edit a sheet, copy it from `$ST/Packages/Cheat Sheets/cheat-sheets` to `$ST/Packages/User/cheat-sheets`. If both folders have sheets with the same $filename then the one in `$ST/User/cheat-sheets` will be opened.
 
 Cheat Sheets can be opened either from the menu: `Tools > Cheat Sheets`, the command palette by pressing `Ctrl + Shft + P` and typing Cheat Sheet, or from the following keyboard shortcuts:
@@ -23,7 +30,7 @@ Sublime Text             | Ctrl + Shft + C,  S, T
 ## How to add your own Cheat Sheets
 1. Add your cheat sheet to `$ST/Packages/User/cheat-sheets/$filename.cheatsheet`.
 
-2. Add a keyboard shortcut by adding the following line to `$ST/Packages/User/Default (OS).sublime-keymap` and change the keys and $filename:
+2. Add a keyboard shortcut by adding the following line to `$ST/Packages/User/Default ($OS).sublime-keymap` and change the keys and $filename:
 	```json
 	[
 		{ "keys": ["ctrl+shift+c", "n", "s"], "command": "cheat_sheet", "args": {"cheatsheet": "$filename"} }
