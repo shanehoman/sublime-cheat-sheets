@@ -26,6 +26,7 @@ Go *                       | Ctrl + Shft + C,  G, O
 KDE *                      | Ctrl + Shft + C,  K, D, E
 Regular Expressions        | Ctrl + Shft + C,  R, X
 Sublime Text *             | Ctrl + Shft + C,  S, T
+\* Incomplete sheet.
 
 ## How to add your own Cheat Sheets
 1. Add your cheat sheet to `$ST/Packages/User/cheat-sheets/$filename.cheatsheet`.
