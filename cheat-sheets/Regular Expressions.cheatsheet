@@ -1,7 +1,8 @@
 >	Regular Expressions Cheat Sheet
->		A regular expression specifies a set of strings that matches it. This cheat sheet is based off the Python 3's Regular Expressions (http://docs.python.org/3/library/re.html). For an introductory tutorial, check out http://docs.python.org/3/howto/regex.html .
+>		A regular expression specifies a set of strings that matches it. This cheat sheet is based off Python 3's Regular Expressions (http://docs.python.org/3/library/re.html). For an introductory tutorial to Regular Expressions, check out http://docs.python.org/3/howto/regex.html .
 
 >	Special Characters
+\		Escapes special characters or signals a special sequence.
 .		Matches any single character except a newline.
 ^		Matches the start of the string.
 $		Matches the end of the string.
@@ -15,8 +16,20 @@ $		Matches the end of the string.
 {m,n}	Greedily matches from m to n many repetitions of the previous Regular Expression.
 {m,n}?	Matches from m to n many repetitions of the previous Regular Expression.
 
-a		Any character, except those described below, matches itself, once.
-\		Escape for the characters below. Maches one instance of the characterh that follows the \
+[]		Indicates a set of characters to match.
+  [amk]			Matches 'a', 'm', or 'k'.
+  [a-z]			Matches 'a' through 'z'.
+  [a-f0-7]		Matches 'a' through 'f' or '0' through '7'.
+  [a\-z]		Matches 'a', '-', or 'z'.
+  [a-]			Matches 'a' or '-'.
+  [-a]			Matches 'a' or '-'.
+  [(+*)]		Matches '(', '+', '*', ')'. [] matches special characters literally.
+  [\w]			Matches the character class for '\w'. See character classes.
+  [^5]			Matches anything other than '5'. '^' only has meaning as the complementary set as the first character in a set.
+  []()]			Matches '[', '(', and ')'. ']' is taken literally only as the first character in a set.
+  [()\]]		Matches '[', '(', and ')'.
+
+
 \x00	Where 00 are 2 hexadecimal digits. Matches the character with the ANSI/ASCII value specified by the hexadecimnal digits.
 \n		Line feed character
 \r		Carriage return character

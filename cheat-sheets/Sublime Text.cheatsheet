@@ -91,38 +91,38 @@ Ctrl + Shft + [						Fold code
 Ctrl + Shft + ]						Unfold code
 
 >	Text Selection
-Ctrl + A               Select all
-Ctrl + D               Repeat multi-­select word
-Alt  + D               Select all instances of word
-Ctrl + Shft + J        Expand selection to indentation
-Ctrl + K               Skip multi-­select word
-Ctrl + L               Select current line
-Ctrl + Shft + M        Select everything within the current brackets
-Ctrl + Shft + U        Undo selection and actions
-Ctrl + Shft + Spce     Expand selection to scope
-Ctrl + Clck            Make multiple selections with mouse
+Ctrl + A							Select all
+Ctrl + D							Repeat multi-­select word
+Alt  + D							Select all instances of word
+Ctrl + Shft + J						Expand selection to indentation
+Ctrl + K							Skip multi-­select word
+Ctrl + L							Select current line
+Ctrl + Shft + M						Select everything within the current brackets
+Ctrl + Shft + U						Undo selection and actions
+Ctrl + Shft + Spce					Expand selection to scope
+Ctrl + Clck							Make multiple selections with mouse
 
 >	Window Navigation
-Ctrl + K + B           Toggle side-bar
-Ctrl + K + M           Toggle mini-map
-Ctrl + N               Open new tab
-Ctrl + Shft + N        Open new window
-Ctrl + Alt + P         Switch to recent project
+Ctrl + K + B						Toggle side-bar
+Ctrl + K + M						Toggle mini-map
+Ctrl + N							Open new tab
+Ctrl + Shft + N						Open new window
+Ctrl + Alt + P						Switch to recent project
 
-Alt  + Shft + 1        Switch to 1 column and 1 row layout
-Alt  + Shft + 2        Switch to 2 column layout
-Alt  + Shft + 3        Switch to 3 column layout
-Alt  + Shft + 4        Switch to 4 column layout
-Alt  + Shft + 5        Switch to 2 column and 2 row layout
-Alt  + Shft + 8        Switch to 2 row layout
-Alt  + Shft + 9        Switch to 3 row layout
+Alt  + Shft + 1						Switch to 1 column and 1 row layout
+Alt  + Shft + 2						Switch to 2 column layout
+Alt  + Shft + 3						Switch to 3 column layout
+Alt  + Shft + 4						Switch to 4 column layout
+Alt  + Shft + 5						Switch to 2 column and 2 row layout
+Alt  + Shft + 8						Switch to 2 row layout
+Alt  + Shft + 9						Switch to 3 row layout
 
-Ctrl + Shft + 1        Focus on group 1
-Ctrl + Shft + 2        Focus on group 2
-Ctrl + Shft + 3        Focus on group 3
-Ctrl + Shft + 4        Focus on group 4
+Ctrl + Shft + 1						Focus on group 1
+Ctrl + Shft + 2						Focus on group 2
+Ctrl + Shft + 3						Focus on group 3
+Ctrl + Shft + 4						Focus on group 4
 
-Ctrl + Tab             Switch to the next tab
-Ctrl + Shft + Tab      Switch to the previous tab
+Ctrl + Tab							Switch to the next tab
+Ctrl + Shft + Tab					Switch to the previous tab
 
-Shft + F11             Distra­ction free mode
+Shft + F11							Distra­ction free mode
