@@ -35,7 +35,7 @@
 		<!-- Keycode: Green -->
 		<dict>
 			<key>match</key>
-			<string>^\t.*(?=#)</string>
+			<string>^\t.*(?=#)|^\t.*(?=\t)</string>
 			<key>name</key>
 			<string>entity.name.function</string>
 		</dict>

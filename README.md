@@ -13,19 +13,19 @@ git clone https://github.com/dmikalova/sublime-cheat-sheets.git
 ```
 
 ## Available Cheat Sheets
-At the moment all cheat sheets are under heavy development as I use this plugin. Feel free to submit your own sheets or edits. Be aware that edits to the defaults sheets will be erased by an update. If you want to safely edit a sheet, copy it from `$ST/Packages/Cheat Sheets/cheat-sheets` to `$ST/Packages/User/cheat-sheets`. If both folders have sheets with the same $filename then the one in `$ST/User/cheat-sheets` will be opened.
+At the moment most cheat sheets are under heavy development. Feel free to submit your own sheets or edits. Be aware that edits to the defaults sheets will be erased by an update. If you want to safely edit a sheet, copy it from `$ST/Packages/Cheat Sheets/cheat-sheets` to `$ST/Packages/User/cheat-sheets`. If both folders have sheets with the same $filename then the one in `$ST/User/cheat-sheets` will be opened.
 
 Cheat Sheets can be opened either from the menu: `Tools > Cheat Sheets`, the command palette by pressing `Ctrl + Shft + P` and typing Cheat Sheet, or from the following keyboard shortcuts:
 
-Command                  | Keyboard Shortcut
------------------------- | ---
-Bash                     | Ctrl + Shft + C,  S, H
-Git                      | Ctrl + Shft + C,  G, I, T
-Github Flavored Markdown | Ctrl + Shft + C,  G, F, M
-Go                       | Ctrl + Shft + C,  G, O
-KDE                      | Ctrl + Shft + C,  K, D, E
-Regular Expressions      | Ctrl + Shft + C,  R, X
-Sublime Text             | Ctrl + Shft + C,  S, T
+Command                    | Keyboard Shortcut
+-------------------------- | -----------------
+Bash *                     | Ctrl + Shft + C,  S, H
+Git *                      | Ctrl + Shft + C,  G, I, T
+Github Flavored Markdown * | Ctrl + Shft + C,  G, F, M
+Go *                       | Ctrl + Shft + C,  G, O
+KDE *                      | Ctrl + Shft + C,  K, D, E
+Regular Expressions        | Ctrl + Shft + C,  R, X
+Sublime Text *             | Ctrl + Shft + C,  S, T
 
 ## How to add your own Cheat Sheets
 1. Add your cheat sheet to `$ST/Packages/User/cheat-sheets/$filename.cheatsheet`.
@@ -59,11 +59,12 @@ Sublime Text             | Ctrl + Shft + C,  S, T
 
 5. Highlighting follows this format:
 	```
-	>\tHeader
-	>\t\tSubtext
+	>\t Header
+	>\t\t Subtext
 	Text
-	Command or code\s\sText
-	\tCommand or code # Comments anywhere
+	Command \t Text
+	Command \s\s Text
+	\tCommand \t Text # Comments
 	```
 
 	Where \t means tab and \s means space.

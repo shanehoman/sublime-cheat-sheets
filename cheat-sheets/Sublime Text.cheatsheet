@@ -1,5 +1,5 @@
->	Sublime Text 2 Cheat Sheet
->		This is a cheat sheet with keyboard shortcuts for Sublime Text 2. A comma means that all previous keys are no longer held. Add another tab with replace and "(?!^)(?<!>)(?<!>\t)\t(?!\t)" and "\t\t" in regex mode.
+>	Sublime Text Cheat Sheet
+>		This is a cheat sheet with keyboard shortcuts for Sublime Text. A comma means that all previous keys are no longer held. Add another tab with replace and "(?!^)(?<!>)(?<!>\t)\t(?!\t)" and "\t\t" in regex mode.
 
 >	Backups
 Ctrl + Alt + [						Navigate backwards through history
