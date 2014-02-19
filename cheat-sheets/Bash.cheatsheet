@@ -7,6 +7,7 @@ Ctrl + A			Jump to beginning of line.
 Ctrl + C 			Kills the current program
 Ctrl + E			Jump to end of line.
 Ctrl + L			Clear the terminal.
+Ctrl + D      Close the terminal.
 
 Ctrl + R			Reverse search through command history.
 Ctrl + O			Executes the command and brings up the next command in history.
