@@ -46,6 +46,9 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 	+ Or pluses
 
 	In above \s means a "space" character
+	
+	- [ ] checkbox
+	- [x] checked checkbox
 
 >	URLs
 	There are two ways to create links.
