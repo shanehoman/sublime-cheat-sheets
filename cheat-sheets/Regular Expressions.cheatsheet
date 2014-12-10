@@ -27,8 +27,8 @@ A|B				Matches A, if A is unmatched then matches B, where A and B are arbitrary 
 	[(+*)]				Matches '(', '+', '*', or ')'. [] matches special characters literally.
 	[\w]				Matches the character class for '\w'. See character classes.
 	[^5]				Matches anything other than '5'. '^' forms the complementary set only as the first character in a set.
-	[]()]				Matches '[', '(', and ')'. ']' is taken literally only as the first character in a set.
-	[()\]]				Matches '[', '(', and ')'.
+	[]()]				Matches ']', '(', and ')'. ']' is taken literally only as the first character in a set.
+	[()\]]				Matches ']', '(', and ')'.
 
 (...)			Matches the RE inside the parenthesis and assigns a new group.
 (?P<name>...)	The RE matched is accessible by the group indicated by name.
