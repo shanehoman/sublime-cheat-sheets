@@ -54,6 +54,13 @@
             "args": {
               "cheatsheet": "Regular Expressions"
             }
+          },
+          {
+            "caption": "VIM Editor",
+            "command": "cheat_sheet",
+            "args": {
+              "cheatsheet": "VIM Editor"
+            }
           }
         ]
       }

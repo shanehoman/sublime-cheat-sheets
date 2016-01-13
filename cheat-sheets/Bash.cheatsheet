@@ -3,18 +3,22 @@
 
 >	Keyboard Shortcuts
 >
-Ctrl + A			Jump to beginning of line.
-Ctrl + C 			Kills the current program
-Ctrl + E			Jump to end of line.
-Ctrl + L			Clear the terminal.
+Ctrl + A			        Jump to beginning of line.
+Ctrl + C 			        Kills the current program
+Ctrl + E			        Jump to end of line.
+Ctrl + L			        Clear the terminal.
+Ctrl + D              Close the terminal.
 
-Ctrl + R			Reverse search through command history.
-Ctrl + O			Executes the command and brings up the next command in history.
+Ctrl + R			        Reverse search through command history.
+Ctrl + O			        Executes the command and brings up the next command in history.
 
-Ctrl + W			Deletes a word.
-Ctrl + \			Super kills the current program.
-Alt  + .			Inserts the last argument from the last command.
-Esc  + .			Inserts the last argument from the last command.
+Ctrl + W			        Deletes a word.
+Ctrl + \			        Super kills the current program.
+Alt  + .			        Inserts the last argument from the last command.
+Esc  + .			        Inserts the last argument from the last command.
+
+Ctrl + Shift + C      Copy texts those are selected to clipboard by selecting with cursor
+Ctrl + Shift + V      Paste texts from clipboard
 
 
 >	Useful tricks
