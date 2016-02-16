@@ -39,9 +39,9 @@ A|B				Matches A, if A is unmatched then matches B, where A and B are arbitrary 
 	(?P=name)			Matches the substring matched by the group named name.
 	(?#...)				A comment, the contents are ignored.
 	(?=...)				Lookahead assertion, the preceding RE only matches if this matches.
-	(?!...)				Negative lookahead assestion, the preceding RE only matches if this doesn't match.
-	(?<=...)			Positive lookbehind assertion, the following RE will only match if preceeded with this fixed length RE.
-	(?<!...)			Negative lookbehind assertion, the following RE will only match if not preceeded with this fixed length RE.
+	(?!...)				Negative lookahead assertion, the preceding RE only matches if this doesn't match.
+	(?<=...)			Positive lookbehind assertion, the following RE will only match if preceded with this fixed length RE.
+	(?<!...)			Negative lookbehind assertion, the following RE will only match if not preceded with this fixed length RE.
 	(?(id)true|false)	If group id exists then uses the true RE, else use the false RE.
 
 >	Character classes
@@ -60,6 +60,7 @@ A|B				Matches A, if A is unmatched then matches B, where A and B are arbitrary 
 \a				Matches the ASCII Bell ().
 \f				Matches the ASCII Formfeed ().
 \n				Matches the ASCII Linefeed.
-\r				Matches the ASCII Carriage Return ().
+\r				Matches the ASCII Carriage Return (
+).
 \t				Matches the ASCII Horizontal Tab.
 \v				Matches the ASCII Vertical Tab ().
